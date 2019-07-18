@@ -5,7 +5,7 @@ set -eu
 {
 cat <<EOF
 steps:
-  - label: test armhf
+  - label: Test for ${BUILD_ARCH}
     command:
     - env
     agents:
