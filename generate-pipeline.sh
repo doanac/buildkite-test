@@ -9,13 +9,9 @@ steps:
     - ./compile.sh
     agents:
     - "andy-test=true"
-    artifact_paths:
-      - "/archive/*"
   - command:
     - echo compiling for aarch64
     - ./compile.sh
-    artifact_paths:
-      - "/archive/*"
     agents:
     - "andy-test=true"
 EOF
