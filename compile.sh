@@ -4,4 +4,4 @@ set -eu
 
 rm -rf /archive
 mkdir /archive
-env /archive/env.txt
+env > /archive/env.txt
