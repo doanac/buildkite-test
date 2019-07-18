@@ -4,15 +4,14 @@ set -eu
 
 cat <<EOF
 steps:
-  - command:
-    - echo compiling for armhf
-    - ./compile.sh
+  - label: Compile for armhf
+    command: ./compile.sh
     env:
-      BUILD_ARCH=armhf
+      BUILD_ARCH: armhf
     agents:
     - "andy-test=true"
-  - command:
-    - echo compiling for aarch64
+  - label: Compile for aarch64
+    command:
     - ./compile.sh
     env:
       BUILD_ARCH=aarch64
