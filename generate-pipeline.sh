@@ -14,7 +14,7 @@ steps:
     command:
     - ./compile.sh
     env:
-      BUILD_ARCH=aarch64
+      BUILD_ARCH: aarch64
     agents:
     - "andy-test=true"
 EOF
